@@ -27,4 +27,9 @@ jobs:
 
     - name: 4. Menjalankan Automated Unit Testing (Pytest)
       run: |
+
+    - name: 3.5. Menjalankan Code Linter (Flake8)
+      run: |
+       flake8 models/ controllers/ --count --select=E9,F63,F7,F82 --show-source --statistics
+
         python -m pytest -v
