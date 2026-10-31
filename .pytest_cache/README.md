@@ -1,8 +1,19 @@
-# pytest cache directory #
+# Sistem Perpustakaan (MVC - Python & CustomTkinter)
 
-This directory contains data from the pytest's cache plugin,
-which provides the `--lf` and `--ff` options, as well as the `cache` fixture.
+## 1. Deskripsi Singkat Aplikasi
+Sistem Perpustakaan adalah aplikasi desktop berbasis Python yang dirancang menggunakan arsitektur Model-View-Controller (MVC) untuk mengelola data buku, peminjaman, dan otentikasi petugas perpustakaan secara efisien dengan antarmuka grafis modern menggunakan CustomTkinter serta database MySQL.
 
-**Do not** commit this to version control.
+## 2. Struktur Direktori MVC
+- `config/` : Konfigurasi koneksi database MySQL
+- `controllers/` : Logika pengendali alur aplikasi
+- `models/` : Pengolahan data dan query database
+- `views/` : Antarmuka pengguna (GUI) CustomTkinter
+- `tests/` : Unit testing menggunakan pytest
+- `dist/` : Berkas eksekusi mandiri (.exe) hasil build PyInstaller
 
-See [the docs](https://docs.pytest.org/en/stable/how-to/cache.html) for more information.
+## 3. Panduan Instalasi & Konfigurasi Database MySQL
+1. Pastikan Python dan MySQL (Laragon) aktif di komputer Anda.
+2. Buat database baru untuk sistem perpustakaan.
+3. Instal seluruh pustaka yang diperlukan dengan menjalankan perintah berikut di terminal:
+   ```bash
+   pip install -r requirements.txt
